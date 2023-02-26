@@ -18,7 +18,7 @@ docs_require = [
     "sphinx>=1.4.0",
 ]
 
-async_require = ["httpx"]
+async_require = ["httpx>=0.15.0"]
 
 xmlsec_require = [
     "xmlsec>=0.6.1",
@@ -55,7 +55,10 @@ setup(
     author="Michael van Tellingen",
     author_email="michaelvantellingen@gmail.com",
     url="https://docs.python-zeep.org",
-    python_requires=">=3.6",
+    project_urls={
+        "Source": "https://github.com/mvantellingen/python-zeep",
+    },
+    python_requires=">=3.7",
     install_requires=install_requires,
     tests_require=tests_require,
     extras_require={
@@ -74,11 +77,11 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
